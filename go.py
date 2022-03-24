@@ -42,7 +42,7 @@ def post(text:str,token:str,proxyi)->requests.Response:
 def main():
     token = 'd898221b60383058'
     count = 1
-    for i in range(145000,145050):
+    for i in range(146000,146010):
         t_token = f'{token}_{i}'
         proxy_used = proxyi[random.randint(0,13)]
         x = post(text[random.randint(0,7)],t_token,proxy_used)
