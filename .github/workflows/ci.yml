@@ -19,5 +19,5 @@ jobs:
 
     - name: go_702
       run: |
-        python auto-post.py
+        python go.py
     
