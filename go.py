@@ -40,9 +40,10 @@ def post(text:str,token:str,proxyi)->requests.Response:
 
 
 def main():
-    token = 'd898221b60383058'
+    token = '430b006a60edced2'
     count = 1
-    for i in range(146000,146010):
+    init = random.randint(1500000,2000000)
+    for i in range(init,init+10):
         t_token = f'{token}_{i}'
         proxy_used = proxyi[random.randint(0,13)]
         x = post(text[random.randint(0,7)],t_token,proxy_used)
@@ -50,7 +51,6 @@ def main():
         
         print(f'count:{count}')
         print(f'i:{i}')
-        print(f'ua:{ua_used}')
         print(f'proxy:{proxy_used}')
         count += 1
         time.sleep(3.5)
