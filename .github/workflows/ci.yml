@@ -2,7 +2,7 @@ name : Go702
 on :
   push:
 jobs:
-  crawling:
+  Go702:
     runs-on: windows-2019
     steps:
     - name: check out repository
@@ -19,5 +19,5 @@ jobs:
 
     - name: go_702
       run: |
-        python cauto-post.py
+        python auto-post.py
     
