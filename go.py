@@ -40,7 +40,7 @@ def post(text:str,token:str,proxyi)->requests.Response:
 
 
 def main():
-    token = '430b006a60edced2'
+    token = '7bc86f7cdbc8b58e'
     count = 1
     init = random.randint(1500000,2000000)
     for i in range(init,init+10):
