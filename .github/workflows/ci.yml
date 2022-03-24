@@ -1,6 +1,6 @@
 name : Go702
 on :
-  push:
+  workflow_dispatch:
 jobs:
   Go702:
     runs-on: windows-2019
