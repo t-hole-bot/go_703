@@ -1,0 +1,23 @@
+name : Go702
+on :
+  push:
+jobs:
+  crawling:
+    runs-on: windows-2019
+    steps:
+    - name: check out repository
+      uses: actions/checkout@v1
+    
+    - name: Set up Python 3.7
+      uses: actions/setup-python@v1
+      with:
+        python-version: 3.7
+    
+    - name: requirements
+      run: |
+        pip install requests
+
+    - name: go_702
+      run: |
+        python cauto-post.py
+    
